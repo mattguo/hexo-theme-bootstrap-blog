@@ -1,9 +1,9 @@
 # Header
 navbar_brand: false
 menu:
-  Home: index.html
+  Matt Guo Home: index.html
   Archives: archives/
-  About: /about
+  About: about/
 rss: /atom.xml
 
 # Content
