@@ -3,24 +3,24 @@ navbar_brand: false
 menu:
   Home: index.html
   Archives: archives/
+  About: /about
 rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: false
+fancybox: true
 
 # Sidebar
 widgets:
-- about         # See also: `about_content`
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
+  - about         # See also: `about_content`
+  - archive
+  - recent_posts
+  - category
+  - tag
+  #- tagcloud
+
 about_widget_content: >
-  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.
-  Cras mattis consectetur purus sit amet fermentum. Aenean
-  lacinia bibendum nulla sed consectetur.</p>
+  <p>Hi, I am <b>Matt Guo</b></p>
 
 # widget behavior
 archive_type: 'monthly'
@@ -28,7 +28,7 @@ show_count: true
 
 # Miscellaneous
 google_analytics:
-favicon:
+favicon: images/favicon.ico
 twitter_id:
 google_plus:
 fb_admins:
