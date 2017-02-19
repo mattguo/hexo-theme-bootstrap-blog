@@ -5,7 +5,9 @@
   </header>
 
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <% if (!post.nodate) { %>
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    <% } %>
     <% if (post.author){ %><div class="article-author"><%= post.author %></div><% } %>
     <%- partial('post/category') %>
   </div>
@@ -20,6 +22,12 @@
           </p>
         <% } %>
       <% } else { %>
+        <% if (!index && post.toc) { %>
+            <div id="toc" class="toc-article">
+            <strong class="toc-title"><%= __('Table of Content') %></strong>
+                <%- toc(post.content, {list_number: false}) %>
+            </div>
+        <% } %>
         <%- post.content %>
       <% } %>
     </div>
