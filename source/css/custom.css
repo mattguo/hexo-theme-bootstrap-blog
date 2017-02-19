@@ -44,7 +44,7 @@ code {
   border-radius: 30px;
 }
 .btn-primary {
-  background-color: #428bca;
+  background-color: #A0522D;
   border-color: #337ab7;
 }
 .nav-pills>li>a {
@@ -63,7 +63,7 @@ code {
  */
 
 .navbar {
-  background-color: #428bca;
+  background-color: #A0522D;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -283,8 +283,8 @@ code {
   margin-bottom: 30px;
 }
 #page-nav .pagination .active>* {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #A0522D;
+  border-color: #A0522D;
 }
 #page-nav .pagination>li:last-child>* {
   border-top-right-radius: 30px;
